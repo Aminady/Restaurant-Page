@@ -1,0 +1,78 @@
+body {
+    color: white;
+    background: rgb(255, 59, 59);
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: start;
+    row-gap: 100px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid black;
+}
+
+.boutons {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    height: 60%;
+}
+
+.resto-presentation {
+        grid-column: 1 / 3;
+        margin: auto;
+        display: block;
+        width: 70%;
+        padding: 20px;
+        background: white;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 10px;
+}
+
+.menu-container {
+    grid-column: 1 / 3;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 2fr;
+    align-items: end;
+    justify-items: stretch;
+    border: 2px black solid;
+    background: white;
+    color: black;
+    font-size: 20px;
+}
+
+.menuTitle {
+    grid-column: 1 / 3;
+}
+.entries {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.main {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.contact-container {
+    padding: 10px;
+    font-size: 20px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
